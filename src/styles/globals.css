@@ -1,6 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 @import "tailwindcss";
+
 
 @theme {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --main-bg-color: #EEEEF0;
+  --main-t-color: #0A080A;
+  }
+
+/* Your custom class */
+.main-bg-color {
+  background-color: var(--main-bg-color);
+}
+
+.ultra-regular { 
+  font-family: "Ultra", serif; 
+  font-weight: 400; 
+  font-style: normal; 
+  color: var(--main-t-color);
 }

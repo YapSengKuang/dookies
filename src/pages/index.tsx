@@ -1,6 +1,7 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 import { api } from "~/utils/api";
 
@@ -51,13 +52,18 @@ export default function Home() {
             <AuthShowcase />
           </div>
         </div> */}
-        <div className = "grid grid-rows-2 gap-5">
-          <div>
-            
+        <div className = "h-screen w-full flex flex-col">
+          <div className= "w-full h-1/2 relative">
+            <Image src="/cookie.jpg" alt="Cookie picture" fill className="object-cover"></Image>
           </div>
           <div>
-            <h1 className="text-5xl font-extrabold tracking-tight ultra-regular sm:text-[5rem] ">
-              DOOKIES
+            <h1 className="
+                leading-none  
+              
+                md:text-[50vh]  /* half the screen */
+                
+                font-extrabold tracking-tight ultra-regular  ">
+              DEL
             </h1>
           </div>
 
